@@ -1,7 +1,7 @@
 {
   "name": "openapi-tanstack-query-solid",
   "description": "A swagger client generator for typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "files": [
     "dist"
@@ -17,19 +17,13 @@
     "fetch",
     "data fetching",
     "code-generation",
-    "react",
-    "react-query",
-    "svelte",
-    "svelte-query",
-    "vue",
-    "vue-query",
     "msw",
     "mock",
     "axios",
-    "vue-query",
-    "vue",
-    "swr",
-    "zod"
+    "solidjs",
+    "solid",
+    "solid-query",
+    "tanstack"
   ],
   "author": {
     "name": "Andrej Nemec"
@@ -51,10 +45,10 @@
   },
   "dependencies": {
     "@apidevtools/swagger-parser": "^10.1.0",
-    "@openapi-tanstack-query-solid/axios": "1.0.0",
-    "@openapi-tanstack-query-solid/core": "1.0.0",
-    "@openapi-tanstack-query-solid/msw": "1.0.0",
-    "@openapi-tanstack-query-solid/query": "1.0.0",
+    "@openapi-tanstack-query-solid/axios": "1.0.1",
+    "@openapi-tanstack-query-solid/core": "1.0.1",
+    "@openapi-tanstack-query-solid/msw": "1.0.1",
+    "@openapi-tanstack-query-solid/query": "1.0.1",
     "ajv": "^8.12.0",
     "cac": "^6.7.14",
     "chalk": "^4.1.2",
