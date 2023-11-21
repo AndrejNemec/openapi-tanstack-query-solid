@@ -728,7 +728,7 @@ ${doc}export const ${camel(
         `${operationPrefix}-${type}`,
     )}(() => {
     const opts = options();
-    return ${queryOptionsFnName}(${queryProperties.split(',').map(item => `opts['${item}']`).join(',')}${
+    return ${queryOptionsFnName}(${queryProperties && queryProperties.length ? queryProperties.trim().split(',').map(item => `opts['${item}']`).join(',') : ''}${
         queryProperties ? ',' : ''
     }${isRequestOptions ? `opts['options']` : `opts['queryOptions']`})
   }) as ${returnType};
