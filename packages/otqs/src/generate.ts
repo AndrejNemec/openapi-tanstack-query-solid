@@ -12,7 +12,7 @@ import {
   NormalizedOptions,
   NormalizedConfig,
   removeFiles,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import chalk from 'chalk';
 import { importSpecs } from './import-specs';
 import { normalizeOptions } from './utils/options';

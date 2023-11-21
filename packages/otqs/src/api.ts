@@ -11,8 +11,8 @@ import {
   NormalizedInputOptions,
   NormalizedOutputOptions,
   resolveRef,
-} from '@openapi-tanstack-query-solid/core';
-import { generateMSWImports } from '@openapi-tanstack-query-solid/msw';
+} from '@otqs/core';
+import { generateMSWImports } from '@otqs/msw';
 import { PathItemObject } from 'openapi3-ts';
 import {
   generateClientFooter,

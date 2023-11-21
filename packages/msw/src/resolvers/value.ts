@@ -4,7 +4,7 @@ import {
   getRefInfo,
   isReference,
   MockOptions,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import get from 'lodash.get';
 import { SchemaObject } from 'openapi3-ts';
 import { getMockScalar } from '../getters/scalar';

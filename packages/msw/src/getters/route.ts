@@ -1,4 +1,4 @@
-import { camel, sanitize } from '@openapi-tanstack-query-solid/core';
+import { camel, sanitize } from '@otqs/core';
 
 const hasParam = (path: string): boolean => /[^{]*{[\w*_-]*}.*/.test(path);
 

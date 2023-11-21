@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/openapi-tanstack-query-solid.svg)](https://badge.fury.io/js/openapi-tanstack-query-solid)
+[![npm version](https://badge.fury.io/js/otqs.svg)](https://badge.fury.io/js/otqs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## OpenAPI Generator for Tanstack Query with Solid Integration
@@ -9,7 +9,7 @@
 
 ### Code Generation
 
-`openapi-tanstack-query-solid` is able to generate client with appropriate type-signatures (TypeScript) from any valid OpenAPI v3 or Swagger v2 specification, either in `yaml` or `json` formats.
+`otqs` is able to generate client with appropriate type-signatures (TypeScript) from any valid OpenAPI v3 or Swagger v2 specification, either in `yaml` or `json` formats.
 
 `Generate`, `valid`, `cache` and `mock` in your SolidJS applications all with your OpenAPI specification.
 
@@ -17,9 +17,9 @@
 
 ### Installation
 
-- **NPM:** ```npm install openapi-tanstack-query-solid```
-- **YARN:** ```yarn add openapi-tanstack-query-solid```
-- **PNPM:** ```pnpm install openapi-tanstack-query-solid```
+- **NPM:** ```npm install otqs```
+- **YARN:** ```yarn add otqs```
+- **PNPM:** ```pnpm install otqs```
 ---
 ### Configuration
 
@@ -33,7 +33,7 @@
 
 **otqs.config.ts**:
 ```ts
-import { defineConfig } from 'openapi-tanstack-query-solid';
+import { defineConfig } from 'otqs';
 
 export default defineConfig({
   petstore: {
@@ -75,17 +75,17 @@ import Axios, { AxiosError, AxiosRequestConfig } from 'axios';
 export const AXIOS_INSTANCE = Axios.create({ baseURL: '' });
 
 export const customInstance = <T>(config: AxiosRequestConfig): Promise<T> => {
-  const source = Axios.CancelToken.source();
-  const promise = AXIOS_INSTANCE({ ...config, cancelToken: source.token }).then(
-    ({ data }) => data,
-  );
+    const source = Axios.CancelToken.source();
+    const promise = AXIOS_INSTANCE({ ...config, cancelToken: source.token }).then(
+        ({ data }) => data,
+    );
 
-  // @ts-ignore
-  promise.cancel = () => {
-    source.cancel('Query was cancelled by Vue Query');
-  };
+    // @ts-ignore
+    promise.cancel = () => {
+        source.cancel('Query was cancelled by Vue Query');
+    };
 
-  return promise;
+    return promise;
 };
 
 export default customInstance;
@@ -98,7 +98,7 @@ export interface ErrorType<Error> extends AxiosError<Error> {}
 
 Command for generate open-api sdk:
 ```bash
-openapi-tanstack-query-solid
+otqs
 ```
 ---
 ### Example

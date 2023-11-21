@@ -8,7 +8,7 @@ import {
   NormalizedOverrideOutput,
   resolveRef,
   stringify,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import { OpenAPIObject, SchemaObject } from 'openapi3-ts';
 import { getMockScalar } from './getters';
 

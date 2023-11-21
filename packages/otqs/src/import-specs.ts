@@ -7,7 +7,7 @@ import {
   upath,
   SwaggerParserOptions,
   WriteSpecsBuilder,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import chalk from 'chalk';
 import yaml from 'js-yaml';
 import fs from 'fs-extra';

@@ -6,7 +6,7 @@ import {
   isBoolean,
   isReference,
   MockOptions,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import { ReferenceObject, SchemaObject } from 'openapi3-ts';
 import { resolveMockValue } from '../resolvers/value';
 import { MockDefinition, MockSchemaObject } from '../types';

@@ -26,7 +26,7 @@ import {
   upath,
   SwaggerParserOptions,
   isUndefined,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import chalk from 'chalk';
 import { InfoObject } from 'openapi3-ts';
 import pkg from '../../package.json';

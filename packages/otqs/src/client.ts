@@ -1,4 +1,4 @@
-import axios from '@openapi-tanstack-query-solid/axios';
+import axios from '@otqs/axios';
 import {
   asyncReduce,
   generateDependencyImports,
@@ -15,9 +15,9 @@ import {
   OutputClient,
   OutputClientFunc,
   pascal,
-} from '@openapi-tanstack-query-solid/core';
-import { generateMSW } from '@openapi-tanstack-query-solid/msw';
-import query from '@openapi-tanstack-query-solid/query';
+} from '@otqs/core';
+import { generateMSW } from '@otqs/msw';
+import query from '@otqs/query';
 
 const DEFAULT_CLIENT = OutputClient.AXIOS;
 

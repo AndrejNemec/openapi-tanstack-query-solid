@@ -1,4 +1,4 @@
-import { isObject, isString, isUndefined, Tsconfig } from '@openapi-tanstack-query-solid/core';
+import { isObject, isString, isUndefined, Tsconfig } from '@otqs/core';
 import findUp from 'find-up';
 import fs from 'fs-extra';
 import { parse } from 'tsconfck';

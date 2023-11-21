@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { defineConfig } from '../../../packages/openapi-tanstack-query-solid';
+import { defineConfig } from '../../../packages/otqs';
 
 export default defineConfig({
   petstore: {

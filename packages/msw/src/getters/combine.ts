@@ -3,7 +3,7 @@ import {
   GeneratorImport,
   isReference,
   MockOptions,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import omit from 'lodash.omit';
 import { resolveMockValue } from '../resolvers';
 import { MockSchemaObject } from '../types';

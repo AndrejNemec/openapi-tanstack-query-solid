@@ -1,5 +1,5 @@
 import SwaggerParser from '@apidevtools/swagger-parser';
-import { upath } from '@openapi-tanstack-query-solid/core';
+import { upath } from '@otqs/core';
 import { prompt } from 'enquirer';
 import fs from 'fs-extra';
 import https from 'https';

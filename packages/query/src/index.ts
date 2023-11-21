@@ -32,7 +32,7 @@ import {
     jsDoc,
     GetterQueryParam,
     compareVersions,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import omitBy from 'lodash.omitby';
 import {
     normalizeQueryOptions,

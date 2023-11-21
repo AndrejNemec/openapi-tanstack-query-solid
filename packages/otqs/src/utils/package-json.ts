@@ -1,4 +1,4 @@
-import { PackageJson } from '@openapi-tanstack-query-solid/core';
+import { PackageJson } from '@otqs/core';
 import findUp from 'find-up';
 import fs from 'fs-extra';
 import { normalizePath } from './options';

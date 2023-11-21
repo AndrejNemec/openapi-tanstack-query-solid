@@ -6,7 +6,7 @@ import {
   isRootKey,
   mergeDeep,
   MockOptions,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import { DEFAULT_FORMAT_MOCK } from '../constants';
 import {
   getNullable,

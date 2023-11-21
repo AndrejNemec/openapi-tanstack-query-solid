@@ -1,18 +1,22 @@
 {
-  "name": "@openapi-tanstack-query-solid/axios",
-  "version": "1.0.2",
+  "name": "@otqs/axios",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndrejNemec/openapi-tanstack-query-solid"
+  },
   "scripts": {
     "build": "tsup ./src/index.ts --target node12 --clean --dts",
     "dev": "tsup ./src/index.ts --target node12 --clean --watch src",
     "lint": "eslint src/**/*.ts"
   },
   "dependencies": {
-    "@openapi-tanstack-query-solid/core": "1.0.2"
+    "@otqs/core": "1.0.0"
   }
 }

@@ -4,7 +4,7 @@ import {
   isString,
   log,
   NormalizedHookCommand,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import chalk from 'chalk';
 import execa from 'execa';
 import { parseArgsStringToArgv } from 'string-argv';

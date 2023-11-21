@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { isString, log, startMessage } from '@openapi-tanstack-query-solid/core';
+import { isString, log, startMessage } from '@otqs/core';
 import { cac } from 'cac';
 import chalk from 'chalk';
 import { generateConfig, generateSpec } from '../generate';
@@ -7,7 +7,7 @@ import pkg from '../../package.json';
 import { normalizeOptions } from '../utils/options';
 import { startWatcher } from '../utils/watcher';
 
-const cli = cac('openapi-tanstack-query-solid');
+const cli = cac('otqs');
 
 startMessage({
   name: pkg.name,

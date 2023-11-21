@@ -18,7 +18,7 @@ import {
   sanitize,
   toObjectString,
   VERBS_WITH_BODY,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 
 const AXIOS_DEPENDENCIES: GeneratorDependency[] = [
   {

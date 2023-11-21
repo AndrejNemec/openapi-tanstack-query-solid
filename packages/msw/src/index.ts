@@ -6,7 +6,7 @@ import {
   GeneratorVerbOptions,
   NormalizedOverrideOutput,
   pascal,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import { getRouteMSW } from './getters';
 import { getMockDefinition, getMockOptionsDataOverride } from './mocks';
 

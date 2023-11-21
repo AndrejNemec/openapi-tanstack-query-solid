@@ -4,7 +4,7 @@ import {
   log,
   Options,
   OptionsExport,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import chalk from 'chalk';
 import { generateConfig, generateSpec } from './generate';
 import { defineConfig, normalizeOptions } from './utils/options';

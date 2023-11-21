@@ -1,4 +1,4 @@
-import { log } from '@openapi-tanstack-query-solid/core';
+import { log } from '@otqs/core';
 import chalk from 'chalk';
 
 export const startWatcher = async (

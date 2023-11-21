@@ -1,4 +1,4 @@
-import { GeneratorImport } from '@openapi-tanstack-query-solid/core';
+import { GeneratorImport } from '@otqs/core';
 import { SchemaObject } from 'openapi3-ts';
 
 export interface MockDefinition {

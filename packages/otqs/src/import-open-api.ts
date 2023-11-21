@@ -16,7 +16,7 @@ import {
   openApiConverter,
   upath,
   WriteSpecsBuilder,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import omit from 'lodash.omit';
 import { OpenAPIObject, SchemasObject } from 'openapi3-ts';
 import { getApiBuilder } from './api';

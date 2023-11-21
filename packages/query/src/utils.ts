@@ -11,7 +11,7 @@ import {
   upath,
   GetterProps,
   GetterPropType,
-} from '@openapi-tanstack-query-solid/core';
+} from '@otqs/core';
 import chalk from 'chalk';
 
 export const normalizeQueryOptions = (
