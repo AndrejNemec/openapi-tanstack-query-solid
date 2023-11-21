@@ -1,0 +1,21 @@
+{
+  "name": "@openapi-tanstack-query-solid/msw",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup ./src/index.ts --target node12 --clean --dts",
+    "dev": "tsup ./src/index.ts --target node12 --clean --watch src",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "@openapi-tanstack-query-solid/core": "1.0.0",
+    "lodash.get": "^4.4.2",
+    "lodash.omit": "^4.5.0",
+    "openapi3-ts": "^3.0.0"
+  }
+}
