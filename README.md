@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/orval.svg)](https://badge.fury.io/js/openapi-tanstack-query-solid)
+[![npm version](https://badge.fury.io/js/openapi-tanstack-query-solid.svg)](https://badge.fury.io/js/openapi-tanstack-query-solid)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## OpenAPI Generator for Tanstack Query with Solid Integration
