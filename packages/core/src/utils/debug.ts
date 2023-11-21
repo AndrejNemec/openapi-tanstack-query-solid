@@ -1,6 +1,6 @@
 import debug from 'debug';
 
-const filter = process.env.ORVAL_DEBUG_FILTER;
+const filter = process.env.OTQS_DEBUG_FILTER;
 const DEBUG = process.env.DEBUG;
 
 interface DebuggerOptions {

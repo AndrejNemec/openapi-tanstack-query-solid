@@ -129,7 +129,7 @@ export const createListPetsInfinite = <
   >,
   TError = ErrorType<Error>,
 >(
-  options: () => {
+  options?: () => {
     params?: ListPetsParams;
     options?: {
       query?: Partial<
@@ -146,7 +146,7 @@ export const createListPetsInfinite = <
   },
 ): CreateInfiniteQueryResult<TData, TError> => {
   const query = createInfiniteQuery(() => {
-    const opts = options();
+    const opts = options?.() || {};
     return getListPetsInfiniteQueryOptions(opts['params'], opts['options']);
   }) as CreateInfiniteQueryResult<TData, TError>;
 
@@ -190,7 +190,7 @@ export const createListPets = <
   TData = Awaited<ReturnType<typeof listPets>>,
   TError = ErrorType<Error>,
 >(
-  options: () => {
+  options?: () => {
     params?: ListPetsParams;
     options?: {
       query?: Partial<
@@ -200,7 +200,7 @@ export const createListPets = <
   },
 ): CreateQueryResult<TData, TError> => {
   const query = createQuery(() => {
-    const opts = options();
+    const opts = options?.() || {};
     return getListPetsQueryOptions(opts['params'], opts['options']);
   }) as CreateQueryResult<TData, TError>;
 
@@ -409,7 +409,7 @@ export const createShowPetById = <
   },
 ): CreateQueryResult<TData, TError> => {
   const query = createQuery(() => {
-    const opts = options();
+    const opts = options?.() || {};
     return getShowPetByIdQueryOptions(opts['petId'], opts['options']);
   }) as CreateQueryResult<TData, TError>;
 

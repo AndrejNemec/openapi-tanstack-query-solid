@@ -708,8 +708,11 @@ ${hookOptions}
     const operationPrefix = 'create';
 
     const definition = toObjectString(props, 'definition')
+    const requiredFields = toObjectString(props, 'required')
+    const hasRequiredFields = requiredFields.trim().split(',').filter(item => item === 'true').length > 0
+
     const createQueryOptions = `
-        options: () => {${definition} ${queryArguments}}
+        options${hasRequiredFields ? '' : '?'}: () => {${definition} ${queryArguments}}
     `
 
     return `
@@ -727,7 +730,7 @@ ${doc}export const ${camel(
   const query = ${camel(
         `${operationPrefix}-${type}`,
     )}(() => {
-    const opts = options();
+    const opts = options?.() || {};
     return ${queryOptionsFnName}(${queryProperties && queryProperties.length ? queryProperties.trim().split(',').map(item => `opts['${item}']`).join(',') : ''}${
         queryProperties ? ',' : ''
     }${isRequestOptions ? `opts['options']` : `opts['queryOptions']`})

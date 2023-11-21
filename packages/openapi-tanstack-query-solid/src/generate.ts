@@ -98,7 +98,7 @@ export const generateConfig = async (
     file: configExternal,
     error,
   } = await loadFile<ConfigExternal>(configFile, {
-    defaultFileName: 'orval.config',
+    defaultFileName: 'otqs.config',
   });
 
   if (!configExternal) {

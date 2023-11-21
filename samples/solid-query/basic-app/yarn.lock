@@ -1392,6 +1392,10 @@ onetime@^5.1.0:
   dependencies:
     mimic-fn "^2.1.0"
 
+"openapi-tanstack-query-solid@link:../../../packages/openapi-tanstack-query-solid/dist":
+  version "0.0.0"
+  uid ""
+
 ora@^5.4.1:
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/ora/-/ora-5.4.1.tgz#1b2678426af4ac4a509008e5e4ac9e9959db9e18"
@@ -1406,10 +1410,6 @@ ora@^5.4.1:
     log-symbols "^4.1.0"
     strip-ansi "^6.0.0"
     wcwidth "^1.0.1"
-
-"orval@link:../../../packages/openapi-tanstack-query-solid/dist":
-  version "0.0.0"
-  uid ""
 
 os-tmpdir@~1.0.2:
   version "1.0.2"

@@ -15,5 +15,5 @@
       "outputs": []
     }
   },
-  "globalEnv": ["ORVAL_DEBUG_FILTER", "CI", "DEBUG"]
+  "globalEnv": ["OTQS_DEBUG_FILTER", "CI", "DEBUG"]
 }

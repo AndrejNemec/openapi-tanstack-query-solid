@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "generate-api": "node ../../../packages/openapi-tanstack-query-solid/dist/bin/orval.js"
+    "generate-api": "node ../../../packages/openapi-tanstack-query-solid/dist/bin/otqs.js"
   },
   "dependencies": {
     "@tanstack/solid-query": "^5.8.4",
@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@iodigital/vite-plugin-msw": "^2.0.0",
-    "orval": "link:../../../packages/openapi-tanstack-query-solid/dist",
+    "openapi-tanstack-query-solid": "link:../../../packages/openapi-tanstack-query-solid/dist",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",
     "vite-plugin-solid": "^2.7.2"

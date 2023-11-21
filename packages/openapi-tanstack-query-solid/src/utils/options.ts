@@ -35,7 +35,7 @@ import { loadPackageJson } from './package-json';
 import { loadTsconfig } from './tsconfig';
 
 /**
- * Type helper to make it easier to use orval.config.ts
+ * Type helper to make it easier to use otqs.config.ts
  * accepts a direct {@link ConfigExternal} object.
  */
 export function defineConfig(options: ConfigExternal): ConfigExternal {
