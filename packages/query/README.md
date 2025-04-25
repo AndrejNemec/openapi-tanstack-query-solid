@@ -17,21 +17,32 @@
 
 ### Installation
 
-- **NPM:** ```npm install otqs```
-- **YARN:** ```yarn add otqs```
-- **PNPM:** ```pnpm install otqs```
+#### For @tanstack/solid-query >= v5.71.9
+
+- **NPM:** `npm install otqs@latest`
+- **YARN:** `yarn add otqs@latest`
+- **PNPM:** `pnpm install otqs@latest`
+
+#### For @tanstack/solid-query >= v5.0.0 and < v5.71.9
+
+- **NPM:** `npm install otqs@1.0.0`
+- **YARN:** `yarn add otqs@1.0.0`
+- **PNPM:** `pnpm install otqs@1.0.0`
+
 ---
+
 ### Configuration
 
-#### **This package generates code that depends on the axios, @tanstack-query/solid, and solid-js packages.**
-- **NPM:** ```npm install axios @tanstack/solid-query solid-js```
-- **YARN:** ```yarn add axios @tanstack/solid-query solid-js```
-- **PNPM:** ```pnpm install axios @tanstack/solid-query solid-js```
+#### **This package generates code that depends on the following packages:**
 
+- **NPM:** `npm install axios @tanstack/solid-query solid-js`
+- **YARN:** `yarn add axios @tanstack/solid-query solid-js`
+- **PNPM:** `pnpm install axios @tanstack/solid-query solid-js`
 
-**More details:** [solid-query](https://github.com/AndrejNemec/openapi-tanstack-query-solid/tree/master/samples/solid-query/basic-app)
+**More details:** [solid-query](https://github.com/AndrejNemec/openapi-tanstack-query-solid/tree/master/apps/solid-query-basic-app)
 
 **otqs.config.ts**:
+
 ```ts
 import { defineConfig } from 'otqs';
 
@@ -57,50 +68,55 @@ export default defineConfig({
               useInfinite: true,
               useInfiniteQueryParam: 'limit',
             },
-          }
-        }
-      }
+          },
+        },
+      },
     },
     input: {
-      target: './petstore.yaml' //or json format
+      target: './petstore.yaml', //or json format
     },
   },
 });
-
 ```
+
 **custom-instance.ts**:
+
 ```ts
 import Axios, { AxiosError, AxiosRequestConfig } from 'axios';
 
 export const AXIOS_INSTANCE = Axios.create({ baseURL: '' });
 
 export const customInstance = <T>(config: AxiosRequestConfig): Promise<T> => {
-    const source = Axios.CancelToken.source();
-    const promise = AXIOS_INSTANCE({ ...config, cancelToken: source.token }).then(
-        ({ data }) => data,
-    );
+  const source = Axios.CancelToken.source();
+  const promise = AXIOS_INSTANCE({ ...config, cancelToken: source.token }).then(
+    ({ data }) => data,
+  );
 
-    // @ts-ignore
-    promise.cancel = () => {
-        source.cancel('Query was cancelled by Vue Query');
-    };
+  // @ts-ignore
+  promise.cancel = () => {
+    source.cancel('Query was cancelled by Vue Query');
+  };
 
-    return promise;
+  return promise;
 };
 
 export default customInstance;
 
 export interface ErrorType<Error> extends AxiosError<Error> {}
 ```
+
 ---
 
 ### Usage
 
 Command for generate open-api sdk:
+
 ```bash
 otqs
 ```
+
 ---
+
 ### Example
 
-- [solid-query](https://github.com/AndrejNemec/openapi-tanstack-query-solid/tree/master/samples/solid-query/basic-app)
+- [solid-query](https://github.com/AndrejNemec/openapi-tanstack-query-solid/tree/master/apps/solid-query-basic-app)

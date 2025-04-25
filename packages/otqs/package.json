@@ -1,7 +1,7 @@
 {
   "name": "otqs",
   "description": "A swagger client generator for typescript",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "license": "MIT",
   "files": [
     "dist"
@@ -45,10 +45,10 @@
   },
   "dependencies": {
     "@apidevtools/swagger-parser": "^10.1.0",
-    "@otqs/axios": "1.0.0",
-    "@otqs/core": "1.0.0",
-    "@otqs/msw": "1.0.0",
-    "@otqs/query": "1.0.0",
+    "@otqs/axios": "workspace:*",
+    "@otqs/core": "workspace:*",
+    "@otqs/msw": "workspace:*",
+    "@otqs/query": "workspace:*",
     "ajv": "^8.12.0",
     "cac": "^6.7.14",
     "chalk": "^4.1.2",

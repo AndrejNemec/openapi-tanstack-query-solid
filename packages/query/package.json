@@ -1,6 +1,6 @@
 {
   "name": "@otqs/query",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -17,7 +17,7 @@
     "lint": "eslint src/**/*.ts"
   },
   "dependencies": {
-    "@otqs/core": "1.0.0",
+    "@otqs/core": "workspace:*",
     "chalk": "^4.1.2",
     "lodash.omitby": "^4.6.0"
   },

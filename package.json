@@ -2,9 +2,6 @@
   "name": "otqs-workspaces",
   "version": "1.0.0",
   "license": "MIT",
-  "workspaces": [
-    "packages/*"
-  ],
   "private": true,
   "scripts": {
     "format": "prettier --write .",
@@ -35,9 +32,10 @@
     "release-it": "^15.6.0",
     "rimraf": "^5.0.5",
     "tsup": "^6.5.0",
-    "turbo": "^1.10.16",
+    "turbo": "^2.5.1",
     "typescript": "^4.7.4",
     "vitest": "^0.6.3",
     "zx": "^7.2.3"
-  }
+  },
+  "packageManager": "pnpm@10.9.0"
 }

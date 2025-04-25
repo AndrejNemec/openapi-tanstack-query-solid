@@ -1,0 +1,25 @@
+{
+  "name": "solid-query-basic-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:app": "tsc && vite build",
+    "preview": "vite preview",
+    "generate-api": "otqs"
+  },
+  "dependencies": {
+    "@tanstack/solid-query": "^5.74.4",
+    "axios": "^1.9.0",
+    "msw": "^2.7.5",
+    "solid-js": "^1.9.5"
+  },
+  "devDependencies": {
+    "@iodigital/vite-plugin-msw": "^2.0.0",
+    "otqs": "workspace:*",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3",
+    "vite-plugin-solid": "^2.11.6"
+  }
+}
